@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/ATDapi.props" />
+  <Import Project="..\build\ATDapi.props" />
 </Project>
