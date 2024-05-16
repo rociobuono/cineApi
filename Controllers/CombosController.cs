@@ -10,6 +10,7 @@ public class CombosController : ControllerBase
 {
     public static List<CombosModel> DataLista = new List<CombosModel>();
 
+    public static int id = 0; 
     [HttpGet]
     [Route("CombosController/Get")]
     public BaseResponse Get(){
@@ -22,14 +23,15 @@ public class CombosController : ControllerBase
 
     public BaseResponse Post([FromBody]CombosModel dataInput){
         
-        dataInput.id = Guid.NewGuid();
+        id++;
+        dataInput.id = id;
         DataLista.Add(dataInput);
         return new BaseResponse (true,(int)HttpStatusCode.Created, "Combo creado"); 
     }
 
     [HttpDelete]
     [Route("CombosController/Delete")]
-    public BaseResponse Delete([FromQuery]Guid id){
+    public BaseResponse Delete([FromQuery]int id){
         CombosModel? combo = DataLista.FirstOrDefault(x => x.id == id);
 
         if (combo == null)

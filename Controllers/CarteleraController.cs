@@ -12,6 +12,7 @@ public class CarteleraController : ControllerBase
 {
     public static List<CarteleraModel> DataLista = new List<CarteleraModel>();
 
+    public static int  id = 0; 
    [HttpGet]
    [Route("CarteleraController/Get")]
    public BaseResponse Get()
@@ -23,13 +24,14 @@ public class CarteleraController : ControllerBase
     [Route("CarteleraController/Create")]
     public BaseResponse Post([FromBody]CarteleraModel dataInput)
     {
-        dataInput.id = Guid.NewGuid();
+        id++;
+        dataInput.id = id;
         DataLista.Add(dataInput);
         return new BaseResponse (true,(int)HttpStatusCode.Created, "Hola :D"); 
     }
     [HttpDelete]
     [Route("CarteleraController/Delete")]
-    public BaseResponse Delete([FromQuery]Guid id)
+    public BaseResponse Delete([FromQuery]int id)
     {
         CarteleraModel? peli = DataLista.FirstOrDefault(x => x.id == id);
 

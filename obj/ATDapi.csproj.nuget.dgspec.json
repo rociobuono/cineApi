@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\algoritmos\\Capi\\ATDapi.csproj": {}
+    "C:\\Users\\hilet.HILET\\cineApi\\ATDapi.csproj": {}
   },
   "projects": {
-    "D:\\algoritmos\\Capi\\ATDapi.csproj": {
+    "C:\\Users\\hilet.HILET\\cineApi\\ATDapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\algoritmos\\Capi\\ATDapi.csproj",
+        "projectUniqueName": "C:\\Users\\hilet.HILET\\cineApi\\ATDapi.csproj",
         "projectName": "ATDapi",
-        "projectPath": "D:\\algoritmos\\Capi\\ATDapi.csproj",
+        "projectPath": "C:\\Users\\hilet.HILET\\cineApi\\ATDapi.csproj",
         "packagesPath": "C:\\Users\\hilet.HILET\\.nuget\\packages\\",
-        "outputPath": "D:\\algoritmos\\Capi\\obj\\",
+        "outputPath": "C:\\Users\\hilet.HILET\\cineApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilet.HILET\\AppData\\Roaming\\NuGet\\NuGet.Config",
