@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "3XMtlEEQboZ3rXtVZkm+v5WMtk90xrM6bGDfHQgncyu+ZXUfCgUrhbzuuG0vZHpeXu40E6oGnWU40RDMcpJpcQ==",
+  "dgSpecHash": "lSdozUS6HOs/6amia7D8iLM/VTjsPLcwjuSz8qXHQ2wqVSlXlq63xR4xavnlXoUZKZ51H7hFdeWSzZ09mcpeiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\hilet.HILET\\cineApi\\ATDapi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hilet.HILET\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\hilet.HILET\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\hilet.HILET\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\hilet.HILET\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\hilet.HILET\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\hilet.HILET\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\hilet.HILET\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "C:\\Users\\hilet.HILET\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\hilet.HILET\\.nuget\\packages\\system.data.odbc\\8.0.0\\system.data.odbc.8.0.0.nupkg.sha512",
+    "C:\\Users\\hilet.HILET\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
