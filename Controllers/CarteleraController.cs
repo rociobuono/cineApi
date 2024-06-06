@@ -11,7 +11,9 @@ namespace ATDapi.Controllers;
 
 public class CarteleraController : ControllerBase
 {
+
     private Repository repository = new Repository();
+    private CarteleraModel carteleraModel = new CarteleraModel();
     public static List<CarteleraModel> DataLista = new List<CarteleraModel>();
 
     public static int  id = 0; 
@@ -19,7 +21,7 @@ public class CarteleraController : ControllerBase
    [Route("CarteleraController/Get")]
    public async Task<BaseResponse> Get()
     {
-        string query = CarteleraModel.GetAll();
+        string query = carteleraModel.select("Cartelera");
         try
         {
             var rsp = await repository.GetListBy<dynamic>(query);

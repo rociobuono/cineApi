@@ -127,3 +127,15 @@ c:\Users\hilet.HILET\cineApi\obj\Debug\net8.0\refint\ATDapi.dll
 c:\Users\hilet.HILET\cineApi\obj\Debug\net8.0\ATDapi.pdb
 C:\Users\hilet.HILET\cineApi\obj\Debug\net8.0\ATDapi.genruntimeconfig.cache
 C:\Users\hilet.HILET\cineApi\obj\Debug\net8.0\ref\ATDapi.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\cartelera.json
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\combos.json
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\Dapper.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\freebsd\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\illumos\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\ios\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\solaris\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\tvos\lib\net8.0\System.Data.Odbc.dll
+c:\Users\hilet.HILET\cineApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.Odbc.dll
