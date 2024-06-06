@@ -14,6 +14,7 @@ public class CarteleraController : ControllerBase
 
     private Repository repository = new Repository();
     private CarteleraModel carteleraModel = new CarteleraModel();
+    string nombre = "Cartelera";
     public static List<CarteleraModel> DataLista = new List<CarteleraModel>();
 
     public static int  id = 0; 
@@ -21,7 +22,7 @@ public class CarteleraController : ControllerBase
    [Route("CarteleraController/Get")]
    public async Task<BaseResponse> Get()
     {
-        string query = carteleraModel.select("Cartelera");
+        string query = carteleraModel.select(nombre);
         try
         {
             var rsp = await repository.GetListBy<dynamic>(query);
@@ -73,7 +74,7 @@ public class CarteleraController : ControllerBase
 
     public async Task<BaseResponse> Delete([FromQuery]int id)
     {
-        string query = CarteleraModel.DeleteByQuery(id);
+        string query = carteleraModel.DeleteByQuery(nombre,id);
         try
         {
             var rsp = await repository.DeleteAsync(query);
