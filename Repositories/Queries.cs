@@ -1,6 +1,6 @@
 
 
-public class Queries{
+public abstract class Queries{
 
         public string select(string clase)
         {
@@ -9,11 +9,10 @@ public class Queries{
         
         public string DeleteByQuery(string clase,int id)
         {
-                return string.Format($"DELETE FROM {clase} WHERE id = {0}", id);
+                return string.Format($"DELETE FROM {clase} WHERE id = {id}");
         }
 
-        /*public string insert(){
+        public abstract string insert();
 
-        }*/
-
+        public abstract string update(string name, int id);
 }

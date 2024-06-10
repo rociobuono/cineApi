@@ -46,7 +46,7 @@ public class CarteleraController : ControllerBase
         //dataInput.id = Guid.NewGuid().ToString();             
         //DataList.Add(dataInput);                            
         
-        string query = dataInput.InsertByQuery();
+        string query = dataInput.insert();
         try
         {
             var rsp = await repository.InsertByQuery(query);
@@ -78,7 +78,20 @@ public class CarteleraController : ControllerBase
         try
         {
             var rsp = await repository.DeleteAsync(query);
-            return new DataResponse<dynamic>(true, (int)HttpStatusCode.OK, "Objeto elminiado", data: rsp);
+            
+            if(rsp == 0)
+            {
+                return new DataResponse<dynamic>(false, (int)HttpStatusCode.NotFound, "No se encontro el objeto", data: rsp);
+            }
+            else if(rsp == 1)
+            {
+                return new DataResponse<dynamic>(true, (int)HttpStatusCode.OK, "Objeto elminiado", data: rsp);
+            }
+            else
+            {
+                return new DataResponse<dynamic>(false, (int)HttpStatusCode.InternalServerError, "Se eliminaron multiples entidades.", data: rsp);
+            }
+
 
         }
         catch(Exception ex)
@@ -103,26 +116,24 @@ public class CarteleraController : ControllerBase
     [HttpPatch]
     [Route("CarteleraController/Patch")]
 
-    public BaseResponse Patch([FromBody]CarteleraModel dataInput)
+    public async Task<BaseResponse> Patch([FromBody]CarteleraModel dataInput)
     {
-        if(dataInput.id == null)
-        {
-            return new BaseResponse(false, (int)HttpStatusCode.BadRequest, "El parametro id es requerido");
-        }
-
-        CarteleraModel? peli = DataLista.FirstOrDefault(x => x.id == dataInput.id);
-
-        if(peli == null)
-        {
-            return new BaseResponse(false, (int)HttpStatusCode.NotFound, "El objeto no fue encontrado");
-        }
-        else
-        {
-            DataLista.Remove(peli);
-            DataLista.Add(dataInput);
-
-            return new BaseResponse(true, (int)HttpStatusCode.OK, "Objeto actualizado");
-        }
+        string query = dataInput.update(nombre, dataInput.id);
+        
+            var rsp = await repository.DeleteAsync(query);
+            
+            if(rsp == 0)
+            {
+                return new DataResponse<dynamic>(false, (int)HttpStatusCode.NotFound, "No se encontro el objeto", data: rsp);
+            }
+            else if(rsp == 1)
+            {
+                return new DataResponse<dynamic>(true, (int)HttpStatusCode.OK, "Objeto modificado", data: rsp);
+            }
+            else
+            {
+                return new DataResponse<dynamic>(false, (int)HttpStatusCode.InternalServerError, "Se eliminaron multiples entidades.", data: rsp);
+            } 
     }
     /*public BaseResponse Patch([FromBody]CarteleraModel dataInput)
     {
