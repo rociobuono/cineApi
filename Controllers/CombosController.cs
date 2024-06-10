@@ -11,6 +11,7 @@ public class CombosController : ControllerBase
 {
     private Repository repository = new Repository();
 
+
     private CombosModel combosModel = new CombosModel();
 
     string nombre = "Combos";
@@ -23,7 +24,9 @@ public class CombosController : ControllerBase
 
     public async Task<BaseResponse> Get()
     {
+
         string query = combosModel.select(nombre);
+
         try
         {
             var rsp = await repository.GetListBy<dynamic>(query);
@@ -70,7 +73,9 @@ public class CombosController : ControllerBase
     [Route("CombosController/Delete")]
     public async Task<BaseResponse> Delete([FromQuery]int id)
     {
+
         string query = combosModel.DeleteByQuery(nombre,id);
+
         try
         {
             var rsp = await repository.DeleteAsync(query);

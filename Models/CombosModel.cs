@@ -12,7 +12,10 @@ public class CombosModel : Queries{
         return string.Format("INSERT INTO Combos VALUES ('{0}', '{1}', '{2}', '{3}')", this.titulo, this.imagen, this.descripcion);
     }
 
+
     /*public static string GetAll()
+
+    public static string GetAll()
     {
         return string.Format("SELECT * FROM Combos;");
     }
@@ -20,6 +23,10 @@ public class CombosModel : Queries{
     public static string DeleteByQuery(int id)
     {
         return string.Format("DELETE FROM Combos WHERE id = {0}", id);
+
     }*/
+  
+    }
+
 
 }
