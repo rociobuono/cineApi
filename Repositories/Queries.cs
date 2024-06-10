@@ -12,4 +12,8 @@ public class Queries{
                 return string.Format($"DELETE FROM {clase} WHERE id = {0}", id);
         }
 
+        /*public string insert(){
+
+        }*/
+
 }

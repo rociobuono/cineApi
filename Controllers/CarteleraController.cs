@@ -17,7 +17,7 @@ public class CarteleraController : ControllerBase
     string nombre = "Cartelera";
     public static List<CarteleraModel> DataLista = new List<CarteleraModel>();
 
-    public static int  id = 0; 
+    //public static int  id = 0; 
    [HttpGet]
    [Route("CarteleraController/Get")]
    public async Task<BaseResponse> Get()
