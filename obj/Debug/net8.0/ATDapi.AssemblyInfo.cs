@@ -13,9 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATDapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72a26b7f7d0c66032151a7617d7928fb2f71b4c0")]
-
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81ab9a6e00846de97a41a4334a4a9ae8ba76f238")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATDapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATDapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
